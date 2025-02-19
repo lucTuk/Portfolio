@@ -1,0 +1,2 @@
+# Findtrend
+Frontend for Findtrend
