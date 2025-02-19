@@ -1,0 +1,71 @@
+@use '../helpers' as *;
+
+.subscription {
+    display: flex;
+    flex-direction: column;
+    
+    @include flex-center();
+
+    margin-top: 40px;
+
+    &__toggle-switch {
+        display: flex;
+        align-items: center;
+        gap: #{rem(24)};
+        margin-bottom: #{rem(40)};
+
+        &-input {
+            &[type=checkbox] {
+                height: 0;
+                width: 0;
+                visibility: hidden;
+                position: absolute;
+                z-index: -999;
+            }
+    
+            &:checked + .subscription__toggle-switch-label {
+                background: var(--color-green-hover);
+            }
+    
+            &:checked + .subscription__toggle-switch-label::after {
+                left: calc(100% - 5px);
+                transform: translateX(-100%);
+            }
+        }
+
+        &-label {
+            cursor: pointer;
+            text-indent: -9999px;
+            width: 104px;
+            height: 52px;
+            background: var(--color-light);
+            display: block;
+            border-radius: 100px;
+            position: relative;
+    
+            &::after {
+                content: '';
+                position: absolute;
+                top: 8px;
+                left: 5px;
+                width: 36px;
+                height: 36px;
+                background: var(--color-green);
+                border-radius: 90px;
+                transition: 0.3s;
+            }
+            
+            /**
+            &:active:after {
+                width: 90px;
+            }
+            */        
+        }
+    }
+
+
+    &__list {
+        display: flex;
+        gap: #{rem(40)}
+    }
+}

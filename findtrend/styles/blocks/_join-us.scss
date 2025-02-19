@@ -1,0 +1,9 @@
+@use '../helpers' as *;
+
+.join-us {
+    display: flex;
+
+    @include flex-center();
+
+    margin-top: #{rem(40)};
+}

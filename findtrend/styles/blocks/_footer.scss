@@ -1,0 +1,20 @@
+@use '../helpers' as *;
+
+.footer {
+    &__logo {
+        width: #{rem(170)};
+        height: #{rem(41)};
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--color-dark);
+    }
+
+    &__nav {
+        display: flex;
+        gap: #{rem(40)};
+    }
+}

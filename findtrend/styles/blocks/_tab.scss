@@ -1,0 +1,48 @@
+@use '../helpers' as *;
+
+.tab {
+    display: flex;
+    flex-direction: column;
+
+    @include flex-center();
+
+    margin-top: #{rem(60)};
+
+    &__card {
+        position: relative;
+
+        padding: #{rem(60)} #{rem(80)};
+        background-color: var(--color-gray-3);
+        border-radius: #{rem(16)};
+        margin-bottom: #{rem(60)};
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url('../../images/tab/arrow-text-left.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: #{rem(95)};
+            height: #{rem(70)};
+            bottom: #{rem(70)};
+            left: #{rem(-115)};
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url('../../images/tab/arrow-text-right.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: #{rem(100)};
+            height: #{rem(70)};
+            bottom: #{rem(70)};
+            right: #{rem(-115)};
+        }
+    }
+
+    &__description {
+        text-align: center;
+        max-width: #{rem(666)};
+    }
+}

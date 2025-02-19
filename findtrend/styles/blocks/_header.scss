@@ -1,0 +1,50 @@
+@use '../helpers' as *;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: #{rem(100)};
+    margin-inline: #{rem(80)};
+
+    &__logo {
+        display: flex;
+        color: var(--color-light);
+
+        @include flex-center();
+
+        gap: #{rem(8)};
+
+        &-text {
+            font-size: #{rem(24)};
+            font-weight: 700;
+        }
+    }
+
+    &__menu {
+
+        &-list {
+            display: flex;
+            gap: #{rem(40)};
+        }
+
+        &-item {
+            font-size: #{rem(18)};
+            font-weight: 400;
+
+            &:hover {
+                color: var(--color-green-hover);
+            }
+        }
+    }
+
+    
+    &__auth-buttons {
+        display: flex;
+        gap: #{rem(16)};
+    }
+
+    &__button {
+        padding: #{rem(12)} #{rem(32)};
+    }
+}

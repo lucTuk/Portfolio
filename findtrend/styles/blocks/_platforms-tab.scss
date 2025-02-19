@@ -1,0 +1,40 @@
+@use '../helpers' as *;
+
+.platforms-tab {
+    display: flex;
+    flex-direction: column;
+    margin-top: #{rem(80)};
+
+    @include flex-center();
+
+    &__nav {
+        display: flex;
+        gap: #{rem(24)};
+        margin-bottom: #{rem(77)};
+
+        &-button {
+            background-color: var(--color-light);
+            padding: #{rem(32)}; 
+            
+            &--active {
+                background-color: var(--color-green-hover);
+            }
+
+            &:hover {
+                background-color: var(--color-green-hover);
+         }
+        }
+    }
+
+    &__content {
+        display: flex;
+        margin-bottom: #{rem(80)};
+
+        &-item {
+            display: none;
+            &--active {
+                display: block;
+            }
+        }
+    }
+}

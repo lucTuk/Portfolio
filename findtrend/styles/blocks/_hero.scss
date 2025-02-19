@@ -1,0 +1,48 @@
+@use '../helpers' as *;
+
+.hero {
+    max-height: #{rem(801)};
+    margin-top: #{rem(99)};
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+
+        @include flex-center()
+    }
+
+    &__title {
+        padding-bottom: #{rem(24)};
+        text-align: center;
+    }
+
+    &__subtitle {
+        color: var(--color-gray);
+        margin-bottom: #{rem(40)};
+        text-align: center;
+    }
+
+    &__button {
+        position: relative;
+        margin-bottom: 100px;
+
+        &::before {
+            content: '';
+
+            position: absolute;
+            background-image: url('../../images/hero/arrow-text.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            width: #{rem(100)};
+            height: #{rem(70)};
+            left: #{rem(200)};
+            top: #{rem(15)};
+        }
+    }
+
+    &__tabs-image {
+        margin-bottom: #{rem(100)};
+    }
+}
+

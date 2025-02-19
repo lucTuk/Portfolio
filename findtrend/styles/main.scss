@@ -1,0 +1,19 @@
+@use 'normalize';
+@use 'fonts';
+@use 'variables';
+@use 'utils';
+@use 'globals';
+
+@use 'blocks/section';
+@use 'blocks/button';
+@use 'blocks/header';
+@use 'blocks/hero';
+@use 'blocks/tab';
+@use 'blocks/startups';
+@use 'blocks/platforms-tab';
+@use 'blocks/posts';
+@use 'blocks/subscription';
+@use 'blocks/subscription-card';
+@use 'blocks/join-us';
+@use 'blocks/footer';
+
