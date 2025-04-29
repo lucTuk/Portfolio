@@ -1,0 +1,35 @@
+@use "../helpers" as *;
+
+.footer {
+  background-color: var(--color-viollet);
+  color: var(--color-light);
+  font-weight: 700;
+
+  &--wrapper {
+    display: flex;
+    height: #{rem(136)};
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__navigation {
+    &-list {
+      display: flex;
+      gap: #{rem(30)};
+    }
+  }
+
+  &__download-buttons {
+    display: flex;
+    gap: #{rem(30)};
+  }
+
+  &__download-button {
+    width: #{rem(189)};
+  }
+
+  &__logo {
+    width: #{rem(52)};
+    height: #{rem(52)};
+  }
+}

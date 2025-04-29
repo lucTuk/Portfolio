@@ -1,0 +1,8 @@
+@use "../helpers" as *;
+
+.stories {
+  &__list {
+    display: flex;
+    gap: #{rem(36)};
+  }
+}

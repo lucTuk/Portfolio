@@ -1,0 +1,35 @@
+@use "../helpers" as *;
+
+.start {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__wrapper {
+    background-color: var(--color-viollet);
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: #{rem(483)};
+    color: var(--color-light);
+    gap: #{rem(25)};
+    margin-bottom: #{rem(50)};
+  }
+
+  &__form {
+    display: flex;
+    gap: #{rem(10)};
+
+    &-button {
+      padding: #{rem(16)} #{rem(54)};
+    }
+  }
+
+  &__image {
+    width: 50%;
+    height: 50%;
+  }
+}

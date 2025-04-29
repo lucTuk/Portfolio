@@ -1,0 +1,31 @@
+@use "../helpers" as *;
+
+.button {
+  display: flex;
+
+  @include flex-center();
+
+  padding: #{rem(16)} 0 #{rem(16)} 0;
+  gap: #{rem(9)};
+  color: var(--color-dark);
+  font-family: var(--font-family-base);
+  font-weight: 900;
+  background-color: var(--color-light);
+  border-radius: #{rem(10)};
+  border: #{rem(2)} solid var(--color-dark);
+  filter: drop-shadow(0px #{rem(4)} 0px #202020);
+
+  &--yellow {
+    color: var(--color-light);
+    background-color: var(--color-yellow);
+  }
+
+  &--red {
+    color: var(--color-light);
+    background-color: var(--color-red);
+  }
+
+  &:hover {
+    filter: drop-shadow(#{rem(2)} #{rem(4)} #{rem(2)} #202020);
+  }
+}

@@ -1,0 +1,12 @@
+@use "../helpers" as *;
+
+.input {
+  border: 0.125rem solid var(--color-dark);
+  border-radius: #{rem(10)};
+  filter: drop-shadow(0px 0.25rem 0px #202020);
+  padding-left: #{rem(20)};
+}
+
+.input::placeholder {
+  color: var(--color-gray);
+}

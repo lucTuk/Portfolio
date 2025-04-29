@@ -1,0 +1,21 @@
+@use "../helpers" as *;
+
+.navigation {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: #{rem(50)};
+  }
+
+  &__burger-button {
+    position: relative;
+    width: #{rem(50)};
+    height: #{rem(50)};
+  }
+
+  &__socials {
+    display: flex;
+    gap: #{rem(22)};
+  }
+}

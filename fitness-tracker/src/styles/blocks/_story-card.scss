@@ -1,0 +1,19 @@
+@use "../helpers" as *;
+
+.story-card {
+  &__image {
+    margin-bottom: #{rem(25)};
+  }
+
+  &__text {
+    display: flex;
+    max-width: #{rem(254)};
+    flex-direction: column;
+    gap: #{rem(5)};
+    margin-bottom: #{rem(15)};
+  }
+
+  &__description {
+    color: var(--color-gray);
+  }
+}

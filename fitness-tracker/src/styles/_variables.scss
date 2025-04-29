@@ -1,0 +1,28 @@
+@use "helpers" as *;
+
+:root {
+  --color-light: #ffffff;
+
+  --color-dark: #1c1c1d;
+  --color-dark-2: #202020;
+
+  --color-gray: #474a57;
+
+  --color-viollet: #71d;
+  --color-yellow: #ffbd12;
+  --color-pink: #ffb0bc;
+  --color-red: #fa6648;
+  --color-blue: #1bdbc4;
+
+  --font-family-base: "Montserrat", sans-serif;
+  --font-family-accent: "Permanent Marker", sans-serif;
+
+  --container-width: #{rem(1600)};
+  --container-padding-x: #{rem(16)};
+
+  --section-padding: #{rem(80)} 0 #{rem(80)} 0;
+
+  --transition-duration: 0.2s;
+
+  --100vw: calc(100vw - var(--scrollbar-width));
+}

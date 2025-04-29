@@ -1,0 +1,51 @@
+@use "../helpers" as *;
+
+.traffic-plan-card {
+  display: flex;
+  flex-direction: column;
+  // width: #{rem(278)};
+  // height: #{rem(411)};
+  padding: #{rem(30)} #{rem(30)} #{rem(40)} #{rem(30)};
+
+  filter: drop-shadow(0px 8px 0px var(--color-dark));
+  border: 1px solid var(--color-dark);
+  border-radius: #{rem(10)};
+
+  &--red {
+    background-color: var(--color-red);
+  }
+
+  &--blue {
+    background-color: var(--color-blue);
+  }
+
+  &--viollet {
+    background-color: var(--color-viollet);
+  }
+
+  &--yellow {
+    background-color: var(--color-yellow);
+  }
+
+  &__name {
+    margin-bottom: #{rem(20)};
+  }
+
+  &__coast {
+    font-size: #{rem(30)};
+    font-weight: 600;
+    margin-bottom: #{rem(30)};
+  }
+
+  &__benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: #{rem(10)};
+    font-weight: 500;
+    margin-bottom: #{rem(30)};
+  }
+
+  &__button {
+    padding: #{rem(17)} #{rem(72)};
+  }
+}
